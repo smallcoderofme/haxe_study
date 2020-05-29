@@ -1,0 +1,11 @@
+-lib heaps
+-lib hide
+-js hello.js
+-main Main
+-debug
+
+
+# -lib hlsdl
+# -lib heaps
+# -main Main
+# -hl bin/main.hl
