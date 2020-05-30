@@ -4,9 +4,23 @@ package;
  * ...
  * @author sunshuai
  */
+import haxe.rtti.Meta;
+import types.*;
+
+
+@author("Sunshuai")
+@:keep
+class MyClass {
+  @range(1, 8)
+  var value:Int;
+
+  @broken(false)
+  static function method() {}
+}
+
+
 class Main 
 {
-	
 
 	static function main() 
 	{
@@ -19,11 +33,42 @@ class Main
 		var dync: Dynamic = 2;
 		var integer: Int = 12;
 		var i: MyAbstract = integer;
+		
+		var map = new Map< String, Int >();
+		map = ["key" => 2];
+		var ma: MapAbstract = map;
+		ma["foo"] = 6;
+		ma.arrayAccess("setter", 7);
+		
+		var a = new AString("foo");
+		trace("AString: ", a[0], "getInt2:", a.getInt2(0)); // f
+		
 		trace("Position:", p.x, p.y, p);
 		trace("User:", u.username, u.age, u.address);
 		trace("IterableWithLength:", t, t.length);
 		trace("Dynamic:", dync);
 		trace("MyAbstract:", i, i.extendDoc());
+		trace("MapAbstract:", ma, ma["key"], ma["foo"], ma.get("setter"));
+		
+	    var myArray: MyArray<Int> = new MyArray<Int>();
+		myArray.push(2);
+		myArray.push(3);
+		myArray.push(5);
+		myArray.push(7);
+		var arr: Array<Int> = [1, 2, 3, 4] ;
+		arr.reverse();
+		myArray.reverse();
+		trace("myArray:", myArray, arr);
+		myArray.push(12);
+		trace("myArray: push", myArray);
+		myArray.pop();
+		trace("myArray: pop", myArray);
+		
+		var base: Base = new Base();
+		var child: Base.Child = new Base.Child();
+		trace(Meta.getType(MyClass));
+		trace(Meta.getFields(MyClass).value.range);
+		trace(Meta.getStatics(MyClass).method);
 	}
 	
 }
