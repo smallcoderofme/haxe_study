@@ -1,5 +1,4 @@
 package hide.comp;
-
 typedef ContextMenuItem = {
 	var label : String;
 	@:optional var menu : Array<ContextMenuItem>;

@@ -8,7 +8,8 @@ class Plugin {
 
 	#if macro
 
-	static var haxelibRoot = sys.io.File.getContent(Sys.getEnv("USERPROFILE")+"/.haxelib");
+	//static var haxelibRoot = sys.io.File.getContent(Sys.getEnv("USERPROFILE")+"/.haxelib");
+	static var haxelibRoot = "D:/HaxeToolkit/haxe/lib";
 	static var EXCLUDES = [
 		"hide",
 		"hrt",
