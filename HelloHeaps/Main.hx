@@ -1,7 +1,7 @@
-import hxd.Window;
-import h2d.Tile;
+// import hxd.Window;
+// import h2d.Tile;
 import hxd.Res;
-import src.Bbj3DModel;
+// import src.Bbj3DModel;
 // import hrt.prefab.fx2d.Bitmap;
 
 class Main extends hxd.App {

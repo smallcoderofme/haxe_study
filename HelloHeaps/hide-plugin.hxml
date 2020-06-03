@@ -1,9 +1,12 @@
 -cp src
+-cp hrt
+-cp libs
 -lib node-webkit
 -lib heaps
 -lib hide
 -lib hxnodejs
 -lib castle
+
 --macro hide.Plugin.init()
 -js hide-plugin.js
 -debug
