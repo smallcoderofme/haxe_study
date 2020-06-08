@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"hide-plugin.js",
+"sourceRoot":"file:///",
+"sources":["F:/worksapce_hashlink/haxe_study/HelloHeap/prefabs/MyPrefab1.hx","D:/HaxeToolkit/haxe/std/js/_std/Math.hx","D:/HaxeToolkit/haxe/std/js/_std/String.hx"],
+"names":[],
+"mappings":";;;;;;;;;;;;;;;;;;;;;;sDAOI,iBAA6B;AAAA,CACzB,8BAAM;AADmB,CAEzB,YAAO;AAFkB;;;;OAK7B,cAA4C;AAAA,EACxC,UAAU,6CAAW;AADmB,EAGxC,OAAO;AAHiC;gBAQ5C,WACI;AAAA,SAAO,SAAS,cAAc;AAA9B;;;;AC6DmC,WAAW,UAAU;AClC7D;sBFtBgB,4BAAiB,WAAY;;"
+}

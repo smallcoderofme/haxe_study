@@ -2,12 +2,12 @@
 	"type": "prefab",
 	"children": [
 		{
-			"x": 50,
-			"y": 50,
+			"x": 100,
+			"y": 100,
 			"color": 16777215,
 			"src": "TEST_ColorPalette.jpg",
-			"dx": -100,
-			"dy": 50,
+			"dx": 0,
+			"dy": 0,
 			"type": "bitmap",
 			"name": "bitmap"
 		}

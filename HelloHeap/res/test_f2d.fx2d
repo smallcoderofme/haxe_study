@@ -1,0 +1,47 @@
+{
+	"duration": 5,
+	"type": "fx2d",
+	"loop": false,
+	"startLoop": 0,
+	"children": [
+		{
+			"x": 200,
+			"y": 200,
+			"color": 16777215,
+			"src": "TEST_ColorPalette.jpg",
+			"dx": 0,
+			"dy": 0,
+			"type": "bitmap",
+			"name": "bitmap"
+		},
+		{
+			"x": 394.78,
+			"y": 139.41,
+			"scaleX": 6.8,
+			"scaleY": 6.8,
+			"color": 16777215,
+			"size": 30,
+			"cutoff": 0.5,
+			"smoothing": 0.03125,
+			"pathFont": "bmfont_binary.fnt",
+			"align": 0,
+			"dsDistance": 0,
+			"enableTextShadow": false,
+			"tsDx": 0,
+			"tsDy": 0,
+			"tsColor": null,
+			"tsAlpha": 1,
+			"enableDropShadow": false,
+			"dsAngle": 0,
+			"dsColor": null,
+			"dsAlpha": 1,
+			"dsRadius": 0,
+			"dsGain": 1,
+			"dsQuality": 1,
+			"dsSmoothColor": true,
+			"text": "Hello",
+			"type": "text",
+			"name": "text"
+		}
+	]
+}

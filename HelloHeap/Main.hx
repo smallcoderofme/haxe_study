@@ -16,11 +16,11 @@ class Main extends hxd.App {
         //     trace(e.keyCode, e.kind);
         // });
 
-        var prefab = Res.my_prefa.load();
+        var prefab = Res.mod_prefab.load();
 
-        var mp = new hrt.prefab.fx2d.Bitmap();
+        new hrt.prefab.fx2d.Bitmap();
         // mp.load(prefab);
-        trace(mp.rotation);
+        // trace(mp.rotation);
         var ctx = new hrt.prefab.Context();
 		var shared = new hrt.prefab.ContextShared();
 		ctx.shared = shared;
@@ -28,6 +28,18 @@ class Main extends hxd.App {
 		shared.root3d = s3d;
         ctx.init();
         prefab.make(ctx);  
+
+
+        var pre = Res.mod_l3d.load();
+        new hrt.prefab.l3d.Level3D();
+        var ctx1 = new hrt.prefab.Context();
+		var shared1 = new hrt.prefab.ContextShared();
+		ctx.shared = shared1;
+		shared1.root2d = s2d;
+		shared1.root3d = s3d;
+        ctx1.init();
+        pre.make(ctx1); 
+
         /**
          *  load 2d image tile
          */
@@ -42,6 +54,7 @@ class Main extends hxd.App {
          */
         // var s = new Bbj3DModel();
         // s3d.addChild(s);
+
     }
 
     private function loaded() {

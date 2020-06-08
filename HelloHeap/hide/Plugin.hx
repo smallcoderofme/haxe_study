@@ -66,7 +66,6 @@ class Plugin {
 	static function init() {
 		var hidePath = getLibraryPath("hide");
 		for( f in sys.io.File.getContent(hidePath+"/common.hxml").split("\n") ) {
-			trace("------------------init", f);
 			var f = StringTools.trim(f);
 			if( f == "" ) continue;
 			var pl = f.split(" ");
