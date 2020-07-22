@@ -117,22 +117,22 @@ class Grid9Size extends Sprite {
 	
 	private function setWidth(value: Float): Void 
 	{
-		this.ct.width = value - 4;
-		this.cm.width = value - 4;
-		this.cb.width = value - 4;
+		this.ct.width = value - this.ceilSize*2;
+		this.cm.width = value - this.ceilSize*2;
+		this.cb.width = value - this.ceilSize*2;
 		
-		this.rt.x = this.ct.x + value - 4;
-		this.rm.x = this.cm.x + value - 4;
-		this.rb.x = this.cb.x + value - 4;
+		this.rt.x = this.ct.x + value - this.ceilSize*2;
+		this.rm.x = this.cm.x + value - this.ceilSize*2;
+		this.rb.x = this.cb.x + value - this.ceilSize*2;
 	}
 	private function setHeight(value: Float): Void
 	{
-		this.lm.height = value - 4;
-		this.cm.height = value - 4;
-		this.rm.height = value - 4;
+		this.lm.height = value - this.ceilSize*2;
+		this.cm.height = value - this.ceilSize*2;
+		this.rm.height = value - this.ceilSize*2;
 		
-		this.lb.y = this.lm.y + value - 4;
-		this.cb.y = this.cm.y + value - 4;
-		this.rb.y = this.rm.y + value - 4;
+		this.lb.y = this.lm.y + value - this.ceilSize*2;
+		this.cb.y = this.cm.y + value - this.ceilSize*2;
+		this.rb.y = this.rm.y + value - this.ceilSize*2;
 	}
 }
