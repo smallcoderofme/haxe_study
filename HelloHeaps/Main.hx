@@ -37,7 +37,7 @@ import h3d.scene.fwd.DirLight;
 
 class Main extends hxd.App {
 	var obj:h3d.scene.Object;
-	var axix:Float = 0;
+	// var axix:Float = 0;
 	var fps: h2d.Text;
 	override function init() {
 		// trace("hello", hxd.Res.gebin);
@@ -80,15 +80,16 @@ class Main extends hxd.App {
 		var layer = new ui.Mylayer(s2d);
 		layer.x = 200;
 
-		fps = new h2d.Text(font);
+/* 		fps = new h2d.Text(font);
 		fps.textAlign = Center;
 		fps.x = 100;
-		s2d.addChild(fps);
+		fps.text = "FPS: " + Math.round(Timer.fps());
+		s2d.addChild(fps); */
 	}
 	override function update(dt:Float) {
 		// increment the display bitmap rotation by 0.1 radians
-		axix+=dt;
-		fps.text = "FPS: " + Math.round(Timer.fps());
+		// axix+=dt;
+		// fps.text = "FPS: " + Math.round(Timer.fps());
 		// obj.setRotation(axix, 0, 0);
 	}
 	static function main() {

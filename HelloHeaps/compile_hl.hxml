@@ -1,0 +1,6 @@
+# -lib hlsdl
+-lib hldx 
+-lib heaps
+-main Main
+-hl bin/hl/main.hl
+-D windowSize=1366x768

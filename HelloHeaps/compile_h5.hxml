@@ -1,0 +1,7 @@
+-lib heaps
+# -lib hide
+# -lib domkit
+-js bundle.js
+# --macro domkit.Macros.checkCSS('res/style.css')
+-main Main
+-debug
