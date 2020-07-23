@@ -61301,7 +61301,7 @@ ui_Mylayer.prototype = $extend(h2d_Layers.prototype,{
 		var t2 = h2d_Tile.fromColor(65280,30,30);
 		var t3 = h2d_Tile.fromColor(255,30,30);
 		var mc = new h2d_Anim([t1,t2,t3],null,this);
-		mc.speed = 60.0;
+		mc.speed = 10.0;
 		mc.onAnimEnd = function() {
 		};
 		mc.posChanged = true;
