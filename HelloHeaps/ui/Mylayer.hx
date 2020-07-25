@@ -20,7 +20,7 @@ class Mylayer extends h2d.Layers {
         var t3 = h2d.Tile.fromColor(0x0000FF, 30, 30);
 
         var mc: h2d.Anim = new h2d.Anim([t1, t2, t3], this);
-        mc.speed = 60.0;
+        mc.speed = 24.0;
         mc.onAnimEnd = function (): Void {
             // trace("Playing Complete!");
         }

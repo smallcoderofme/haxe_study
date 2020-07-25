@@ -317,6 +317,25 @@ Main.prototype = $extend(hxd_App.prototype,{
 		var layer = new ui_Mylayer(this.s2d);
 		layer.posChanged = true;
 		layer.x = 200;
+		var tile = new h2d_Bitmap(hxd_Res.get_loader().loadCache("image.jpg",hxd_res_Image).toTile(),this.s2d);
+		tile.posChanged = true;
+		tile.x = 500;
+		var interaction = new h2d_Interactive(300,100,tile);
+		interaction.onOver = function(event) {
+			tile.alpha = 0.7;
+		};
+		interaction.onOut = function(event1) {
+			tile.alpha = 1;
+		};
+		interaction.onPush = function(event2) {
+			haxe_Log.trace("down!",{ fileName : "Main.hx", lineNumber : 94, className : "Main", methodName : "init"});
+		};
+		interaction.onRelease = function(event3) {
+			haxe_Log.trace("up!",{ fileName : "Main.hx", lineNumber : 97, className : "Main", methodName : "init"});
+		};
+		interaction.onClick = function(event4) {
+			haxe_Log.trace("click!",{ fileName : "Main.hx", lineNumber : 100, className : "Main", methodName : "init"});
+		};
 	}
 	,update: function(dt) {
 	}
@@ -61301,7 +61320,7 @@ ui_Mylayer.prototype = $extend(h2d_Layers.prototype,{
 		var t2 = h2d_Tile.fromColor(65280,30,30);
 		var t3 = h2d_Tile.fromColor(255,30,30);
 		var mc = new h2d_Anim([t1,t2,t3],null,this);
-		mc.speed = 10.0;
+		mc.speed = 24.0;
 		mc.onAnimEnd = function() {
 		};
 		mc.posChanged = true;

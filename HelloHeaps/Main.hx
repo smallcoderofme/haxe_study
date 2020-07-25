@@ -80,6 +80,26 @@ class Main extends hxd.App {
 		var layer = new ui.Mylayer(s2d);
 		layer.x = 200;
 
+		var tile = new h2d.Bitmap(hxd.Res.image.toTile(), s2d);
+		tile.x = 500;
+		
+		var interaction = new h2d.Interactive(300, 100, tile);
+		interaction.onOver = function(event : hxd.Event) {
+			tile.alpha = 0.7;
+		}
+		interaction.onOut = function(event : hxd.Event) {
+			tile.alpha = 1;
+		}
+		interaction.onPush = function(event : hxd.Event) {
+			trace("down!");
+		}
+		interaction.onRelease = function(event : hxd.Event) {
+			trace("up!");
+		}
+		interaction.onClick = function(event : hxd.Event) {
+			trace("click!");
+		}
+
 /* 		fps = new h2d.Text(font);
 		fps.textAlign = Center;
 		fps.x = 100;
