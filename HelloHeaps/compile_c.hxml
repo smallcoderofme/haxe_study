@@ -1,4 +1,4 @@
 -lib heaps
--lib hldx
+-lib hlsdl
 -hl out/main.c
 -main Main
