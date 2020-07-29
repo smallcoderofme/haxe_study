@@ -32,6 +32,7 @@ class DivComp extends h2d.Flow implements h2d.domkit.Object {
 
 }
 */
+import hxd.Res;
 import hxd.Timer;
 import h3d.scene.fwd.DirLight;
 
@@ -77,28 +78,32 @@ class Main extends hxd.App {
         new h3d.scene.CameraController(s3d).loadFromCamera(); */
 
 		// engine.backgroundColor = 0xFF808080;
-		var layer = new ui.Mylayer(s2d);
-		layer.x = 200;
 
-		var tile = new h2d.Bitmap(hxd.Res.image.toTile(), s2d);
-		tile.x = 500;
+		// var layer = new ui.Mylayer(s2d);
+		// layer.x = 200;
+
+		// var tile = new h2d.Bitmap(hxd.Res.image.toTile(), s2d);
+		// tile.x = 500;
 		
-		var interaction = new h2d.Interactive(300, 100, tile);
-		interaction.onOver = function(event : hxd.Event) {
-			tile.alpha = 0.7;
-		}
-		interaction.onOut = function(event : hxd.Event) {
-			tile.alpha = 1;
-		}
-		interaction.onPush = function(event : hxd.Event) {
-			trace("down!");
-		}
-		interaction.onRelease = function(event : hxd.Event) {
-			trace("up!");
-		}
-		interaction.onClick = function(event : hxd.Event) {
-			trace("click!");
-		}
+		// var interaction = new h2d.Interactive(300, 100, tile);
+		// interaction.onOver = function(event : hxd.Event) {
+		// 	tile.alpha = 0.7;
+		// }
+		// interaction.onOut = function(event : hxd.Event) {
+		// 	tile.alpha = 1;
+		// }
+		// interaction.onPush = function(event : hxd.Event) {
+		// 	trace("down!");
+		// }
+		// interaction.onRelease = function(event : hxd.Event) {
+		// 	trace("up!");
+		// }
+		// interaction.onClick = function(event : hxd.Event) {
+		// 	trace("click!");
+		// }
+
+		// var part = new h2d.Particles(s2d);
+		// part.load( {}, Res.boom.entry.getText());
 
 /* 		fps = new h2d.Text(font);
 		fps.textAlign = Center;

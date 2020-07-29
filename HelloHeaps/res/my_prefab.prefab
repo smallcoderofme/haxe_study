@@ -1,0 +1,16 @@
+{
+	"type": "prefab",
+	"children": [
+		{
+			"x": 69.34,
+			"y": 35.37,
+			"scaleX": 0.66,
+			"color": 8871518,
+			"src": "TEST_ColorPalette.jpg",
+			"dx": 0,
+			"dy": 0,
+			"type": "bitmap",
+			"name": "bitmap"
+		}
+	]
+}
