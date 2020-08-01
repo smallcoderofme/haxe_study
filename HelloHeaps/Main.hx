@@ -32,6 +32,7 @@ class DivComp extends h2d.Flow implements h2d.domkit.Object {
 
 }
 */
+import ui.Role;
 import hxd.Res;
 import hxd.Timer;
 import h3d.scene.fwd.DirLight;
@@ -110,9 +111,13 @@ class Main extends hxd.App {
 		fps.x = 100;
 		fps.text = "FPS: " + Math.round(Timer.fps());
 		s2d.addChild(fps); */
+
+		var role = new Role(s2d);
+		// new h2d.Bitmap(hxd.Res.wushi.walk._0000.toTile(), s2d);
+		// var bitmap = new h2d.Bitmap(hxd.Res.load("wushi/walk/0000.png").toImage().toTile(), s2d);
 	}
 	override function update(dt:Float) {
-		// increment the display bitmap rotation by 0.1 radians
+		// increment the display bitmap rotation by 0.1 radiansh
 		// axix+=dt;
 		// fps.text = "FPS: " + Math.round(Timer.fps());
 		// obj.setRotation(axix, 0, 0);
@@ -120,6 +125,7 @@ class Main extends hxd.App {
 	static function main() {
 		// h3d.mat.PbrMaterialSetup.set();
 		hxd.Res.initEmbed();
+		// hxd.Res.initLocal();
 		new Main();
 	}
 

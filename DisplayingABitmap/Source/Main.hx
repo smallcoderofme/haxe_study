@@ -44,17 +44,17 @@ class Main extends Sprite {
 		//var lt = new LT();
 		//this.addChild(lt);
 		
-		var collection: Array<MovieClip> = [
-			new LT(), new CT(), new RT(),
-			new LM(), new CM(), new RM(),
-			new LB(), new CB(), new RB()
-		];
-		var grid9size = new Grid9Size();
-		this.addChild(grid9size);
-		grid9size.x = 10;
-		grid9size.y = 10;
-		grid9size.cells(collection);
-		grid9size.size(50, 20);
+		// var collection: Array<MovieClip> = [
+		// 	new LT(), new CT(), new RT(),
+		// 	new LM(), new CM(), new RM(),
+		// 	new LB(), new CB(), new RB()
+		// ];
+		// var grid9size = new Grid9Size();
+		// this.addChild(grid9size);
+		// grid9size.x = 10;
+		// grid9size.y = 10;
+		// grid9size.cells(collection);
+		// grid9size.size(50, 20);
 		
 		//var sc0 = new MyScale();
 		//this.addChild(sc0);
@@ -68,7 +68,7 @@ class Main extends Sprite {
 		//sc.scaleX = 2;
 		//sc.scaleY = 2;
 		
-		stage.addEventListener(MouseEvent.CLICK, onClick);
+		// stage.addEventListener(MouseEvent.CLICK, onClick);
 		
 		var fps_mem:FPS_Memory = new FPS_Memory(10, 10, 0x000000);
 		addChild(fps_mem);
