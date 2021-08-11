@@ -8,10 +8,10 @@
     <movie fps="0" />
     <movie width="800" />
     <movie height="600" />
-    <movie version="1" />
+    <movie version="0" />
     <movie minorVersion="0" />
     <movie platform="HashLink" />
-    <movie background="#FFFFFF" />
+    <movie background="#ADAAA7" />
   </output>
   <!-- Other classes to be compiled into your SWF -->
   <classpaths>

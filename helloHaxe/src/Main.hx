@@ -6,6 +6,7 @@ package;
  */
 import haxe.rtti.Meta;
 import types.*;
+import haxe.macro.Expr;
 
 typedef IterableWithLength<T> = {
   > Iterable<T>,
@@ -78,13 +79,17 @@ class Main
 		
 	
 		
-		var array = [1, 2, 3, 4];
-		trace("---------------------------array length:",array.length);
-		var t: IterableWithLength<Int> = array;
-		trace("---------------------------t length:",t.length);
-		
+		//var array = [1, 2, 3, 4];
+		//trace("---------------------------array length:",array.length);
+		//var t: IterableWithLength<Int> = array;
+		//trace("---------------------------t length:",t.length);
+		var ret = add(5, 1+6);
+		trace(ret);
 	}
-	
+	macro static function add(e1:Expr, e2: Expr) {
+		return macro $e1 * 1000 + $e2 * 10;
+	}
+
 }
 typedef Position = {
 	var x: Int;
